@@ -1,0 +1,93 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1C201F;
+  z-index: 1000;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'SpaceGrotesk';
+    font-size: 2vw;
+  }
+
+  li {
+    padding-top: 2rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+   a:hover,
+   a:active,
+   a:focus {
+    color: #DFFF60;
+    text-decoration: underline;
+  }
+}
+
+h1{
+  font-family: 'inter';
+}
+
+.container{
+  background-color: #6D8D8B;
+  border-radius: 25px;
+  margin: 0 auto; 
+  display: flex; 
+  width: 70%;
+  height: auto;
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 20px;
+
+  .title-1 {
+    color: white;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 6vw;
+    grid-column: 1;
+    grid-row: 1;
+    
+  }
+  .title-2 {
+    color: #DFFF60;
+    margin-bottom: 2rem;
+    margin-right: 2.5rem;
+    font-size: 6vw;
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  img {
+    grid-column: 2;
+    grid-row: 1 /  span 3; 
+    justify-self: center; 
+    align-self: end;
+    height: 90%;
+    width: auto;
+  }
+
+  .descrip{
+    font-family: 'SpaceGrotesk';
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    justify-self: center;
+    align-self: center;
+    font-size: 2vw;
+    width: 60%;
+  }
+}
+
+
+
