@@ -1,16 +1,36 @@
-<nav>
-  <ul>
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a routerLink="/acerca-de">Skills</a></li>
-    <li><a routerLink="/servicios">Experiencia</a></li>
-    <li><a routerLink="/contacto">Proyectos</a></li>
-    <li><a routerLink="/contacto">Contacto</a></li>
-  </ul>
-</nav>
 
-<div id="inicio" class="container">
-  <h1 class="title-1">Didier</h1>
-  <h1 class="title-2">Piracoca</h1>
-  <img src="..\assets\images\didierFoto.png" alt="Descripción de la imagen">
-  <p class="descrip">Descubre mi mundo como desarrollador multiplataforma. ¡Creatividad sin límites!</p>
-</div>
+<mat-drawer-container class="econtainer" hasBackdrop="true">
+  <mat-drawer #drawer mode="over">
+    <mat-list >
+      <mat-list-item matRipple><a href="#inicio">Inicio</a></mat-list-item>
+      <mat-list-item matRipple><a routerLink="/acerca-de">Skills</a></mat-list-item>
+      <mat-list-item matRipple><a routerLink="/servicios">Experiencia</a></mat-list-item>
+      <mat-list-item matRipple><a routerLink="/contacto">Proyectos</a></mat-list-item>
+      <mat-list-item matRipple><a routerLink="/contacto">Contacto</a></mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a routerLink="/acerca-de">Skills</a></li>
+        <li><a routerLink="/servicios">Experiencia</a></li>
+        <li><a routerLink="/contacto">Proyectos</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="tab">
+      <button  mat-icon-button aria-label="Menu desplegable" (click)="drawer.toggle()">
+        <mat-icon class="material-symbols-outlined">menu</mat-icon>
+      </button>
+
+    </div>
+    <div id="inicio" class="container">
+      <h1 class="title-1">Didier</h1>
+      <h1 class="title-2">Piracoca</h1>
+      <img src="..\assets\images\didierFoto.png" alt="Descripción de la imagen">
+      <p class="descrip">Descubre mi mundo como desarrollador multiplataforma. ¡Creatividad sin límites!</p>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+
