@@ -1,0 +1,132 @@
+.timeline {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 2rem;
+    border-left: 3px solid #6D8D8B;
+
+    .timeline-item {
+        position: relative;
+        padding-bottom: 3vh;
+
+        h3 {
+            font-family: 'SpaceGrotesk';
+            color: #afb9b6;
+            font-size: 1.5vw;
+            margin-top: 0px;
+            margin-left: 0.5rem;
+
+        }
+
+        h4 {
+            font-family: 'Inter';
+            color: #1C201F;
+            font-size: 2vw;
+            margin-top: 4vh;
+            margin-bottom: 0px;
+            margin-left: 0.5rem;
+            text-align: right;
+        }
+
+        .lugar {
+            color: #1C201F;
+            font-family: 'SpaceGrotesk';
+            font-size: 1.5vw;
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+            text-align: right;
+        }
+
+        .icono {
+            width: 3rem;
+            height: 3rem;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 2px solid #6D8D8B;
+            background-color: #FFF;
+            position: absolute;
+            left: -3.5rem;
+            z-index: 20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .material-symbols-outlined {
+                color: #6D8D8B;
+            }
+        }
+
+        .tareas {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+
+            ul {
+                margin-right: 4vw;
+            }
+
+            li {
+                color: #70807c;
+                font-family: 'SpaceGrotesk';
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .timeline {
+        .timeline-item {
+            h3 {
+                font-size: 2vw;
+            }
+
+            h4 {
+                font-size: 2.5vw;
+            }
+
+            .lugar {
+                font-size: 2vw;
+            }
+
+            .tareas {
+                li {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .timeline {
+        .timeline-item {
+            h3 {
+                padding-top: 0.5rem;
+                margin-left: 0px;
+                font-size: 3vw;
+            }
+
+            h4 {
+                margin-top: 2vh;
+                font-size: 4vw;
+            }
+
+            .lugar {
+                font-size: 3.5vw;
+            }
+
+            .tareas {
+                ul {
+                    padding-left:1vw ;
+                    margin-right: 0px;
+                }
+
+                li {
+                    font-size: 3.5vw;
+                    margin-bottom: 0.5vh;
+                }
+            }
+        }
+    }
+}

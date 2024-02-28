@@ -4,7 +4,7 @@
     <mat-list >
       <mat-list-item matRipple><a href="#inicio">Inicio</a></mat-list-item>
       <mat-list-item matRipple><a href="#Skills">Skills</a></mat-list-item>
-      <mat-list-item matRipple><a routerLink="/servicios">Experiencia</a></mat-list-item>
+      <mat-list-item matRipple><a href="#Trayectoria">Trayectoria</a></mat-list-item>
       <mat-list-item matRipple><a routerLink="/contacto">Proyectos</a></mat-list-item>
       <mat-list-item matRipple><a routerLink="/contacto">Contacto</a></mat-list-item>
     </mat-list>
@@ -14,7 +14,7 @@
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#Skills">Skills</a></li>
-        <li><a routerLink="/servicios">Experiencia</a></li>
+        <li><a href="#Trayectoria">Trayectoria</a></li>
         <li><a routerLink="/contacto">Proyectos</a></li>
         <li><a routerLink="/contacto">Contacto</a></li>
       </ul>
@@ -54,6 +54,10 @@
         <div class="item">  <img src="..\assets\icons\firebase.svg" alt="Firebase"></div>
         <div class="item"><img src="..\assets\icons\figma.svg" alt="Figma"></div>
       </div>
+    </div>
+    <div id="Trayectoria" class="trayectoria">
+      <h2>Trayectoria</h2>
+      <app-trayectoria></app-trayectoria>
     </div>
   </mat-drawer-content>
 </mat-drawer-container>
