@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'porfolio';
+
+  scrollToSection(elemento:string, block :any) {
+    document.getElementById(elemento)?.scrollIntoView(
+      {
+        behavior: "smooth",
+        block: block
+      }
+    );
+  }
 }

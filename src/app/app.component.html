@@ -2,21 +2,21 @@
 <mat-drawer-container class="econtainer" hasBackdrop="true">
   <mat-drawer #drawer mode="over">
     <mat-list >
-      <mat-list-item matRipple><a href="#inicio">Inicio</a></mat-list-item>
-      <mat-list-item matRipple><a href="#Skills">Skills</a></mat-list-item>
-      <mat-list-item matRipple><a href="#Trayectoria">Trayectoria</a></mat-list-item>
-      <mat-list-item matRipple><a routerLink="/contacto">Proyectos</a></mat-list-item>
-      <mat-list-item matRipple><a routerLink="/contacto">Contacto</a></mat-list-item>
+      <mat-list-item matRipple><p class="link" (click)="scrollToSection('inicio','end') ; drawer.close()"> Inicio</p></mat-list-item>
+      <mat-list-item matRipple><p class="link" (click)="scrollToSection('skills','center') ; drawer.close()"> Skills</p></mat-list-item>
+      <mat-list-item matRipple><p class="link" (click)="scrollToSection('trayectoria','center') ; drawer.close()"> Trayectoria</p></mat-list-item>
+      <mat-list-item matRipple><p class="link" (click)="scrollToSection('inicio','end'); drawer.close()"> Proyectos</p></mat-list-item>
+      <mat-list-item matRipple><p class="link" (click)="scrollToSection('inicio','end'); drawer.close()"> Contacto</p></mat-list-item>
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Trayectoria">Trayectoria</a></li>
-        <li><a routerLink="/contacto">Proyectos</a></li>
-        <li><a routerLink="/contacto">Contacto</a></li>
+        <li> <p class="link" (click)="scrollToSection('inicio','end')"> Inicio</p></li>
+        <li><p class="link" (click)="scrollToSection('skills','center')"> Skills</p></li>
+        <li><p class="link" (click)="scrollToSection('trayectoria','start')"> Trayectoria</p></li>
+        <li><p class="link" (click)="scrollToSection('inicio','end')"> Proyectos</p></li>
+        <li><p class="link" (click)="scrollToSection('inicio','end')"> Contacto</p></li>
       </ul>
     </nav>
     <div class="tab">
@@ -32,7 +32,7 @@
       <p class="descrip">Descubre mi mundo como desarrollador multiplataforma. ¡Creatividad sin límites!</p>
     </div>
 
-    <div id="Skills" class="skills">
+    <div id="skills" class="skills">
 
       <h2>Skills</h2>
 
@@ -56,7 +56,7 @@
         <div class="item"><img src="..\assets\icons\figma.svg" alt="Figma"></div>
       </div>
     </div>
-    <div id="Trayectoria" class="trayectoria">
+    <div id="trayectoria" class="trayectoria">
       <h2>Trayectoria</h2>
       <app-trayectoria></app-trayectoria>
     </div>
