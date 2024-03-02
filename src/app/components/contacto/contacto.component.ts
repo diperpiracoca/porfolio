@@ -5,18 +5,9 @@ import { FormControl, FormGroupDirective, NgForm, Validators, FormGroup } from '
 import { ErrorStateMatcher } from '@angular/material/core';
 import { initializeApp } from "firebase/app";
 import { child, getDatabase, push, ref, set } from "firebase/database";
+import { environment } from 'src/environments/environment';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyATFToDBT8FqSJoOyf9VZDtQlu0ARMtpLw",
-  authDomain: "portafolio-52069.firebaseapp.com",
-  databaseURL: "https://portafolio-52069-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "portafolio-52069",
-  storageBucket: "portafolio-52069.appspot.com",
-  messagingSenderId: "948066141348",
-  appId: "1:948066141348:web:2bf9be11153fd589489231"
-};
-
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(environment.firebaseConfig);
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
