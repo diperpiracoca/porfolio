@@ -8,15 +8,49 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @include mat.core();
-
+$dark-primary-text: rgba(black, 0.87);
+$light-primary-text: white;
+$bv-brand: (
+    50: #ffffff,
+    100: #dde6f3,
+    200: #a8bcba,
+    300: #86a19f,
+    400: #6d8d8b,
+    500: #547a77,
+    600: #496b68,
+    700: #547a77,
+    800: #2d4342,
+    900: #1C201F,
+    A100: #ffffff,
+    A200: #1C201F,
+    A400: #DFFF60,
+    A700: #3b5755,
+    contrast: (
+      50: $dark-primary-text,
+      100: $dark-primary-text,
+      200: $dark-primary-text,
+      300: $dark-primary-text,
+      400: $dark-primary-text,
+      500: $light-primary-text,
+      600: $light-primary-text,
+      700: $light-primary-text,
+      800: $light-primary-text,
+      900: $light-primary-text,
+      A100: $dark-primary-text,
+      A200: $dark-primary-text,
+      A400: $dark-primary-text,
+      A700: $light-primary-text,
+    )
+);
+  
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$porfolio-primary: mat.define-palette(mat.$indigo-palette);
-$porfolio-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$porfolio-primary: mat.define-palette($bv-brand) ;
+$porfolio-accent: mat.define-palette($bv-brand,A400);
 
 // The warn palette is optional (defaults to red).
-$porfolio-warn: mat.define-palette(mat.$red-palette);
+$porfolio-warn: mat.define-palette($bv-brand,A200);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
@@ -39,5 +73,13 @@ $porfolio-theme: mat.define-light-theme((
 
 @include mat.all-component-themes($porfolio-theme);
 
+
 html, body { height: 100%; }
 body { margin: 0; background-color: #1C201F; font-family: sans-serif; }
+.material-symbols-outlined {
+  color: #FFFFFF;
+}
+
+.mat-mdc-snack-bar-container  {
+  --mdc-snackbar-container-color: #1C201F;
+}

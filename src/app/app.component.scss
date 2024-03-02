@@ -55,7 +55,7 @@ nav {
   display: flex;
   width: 75%;
   height: auto;
-  margin-top: 7rem;
+  margin-top: 8vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -101,7 +101,7 @@ nav {
 }
 
 .skills {
-  margin-top: 4rem;
+  padding-top: 6vh;
   margin-bottom: 6rem;
 
   h2 {
@@ -132,10 +132,10 @@ nav {
 }
 
 .trayectoria {
-  padding-top: 1rem;
+  padding-top: 6vh;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 3rem;
+  padding-bottom: 3vh;
   background-color: #FFFFFF;
 
   h2 {
@@ -146,7 +146,37 @@ nav {
   }
 }
 
+.contacto {
+  padding-top: 6vh;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 3vh;
+  background-color: #6D8D8B;
+
+  h2 {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    padding-bottom: 0vh;
+
+    li {
+      padding-top: 1vh;
+      padding-right: 3vw;
+      padding-bottom: 1vh;
+    }
+
+    .link {
+      margin-top: 1vh;
+    }
+  }
+
   .container {
     border-radius: 25px;
     margin: 0 auto;
@@ -198,13 +228,14 @@ nav {
       width: 80%;
     }
   }
+
   .trayectoria {
     padding-top: 1rem;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 3rem;
     background-color: #FFFFFF;
-  
+
     h2 {
       color: #6D8D8B;
       font-family: "Inter";
@@ -212,7 +243,7 @@ nav {
       text-align: center;
     }
   }
-  
+
 }
 
 @media screen and (max-width: 768px) {
@@ -254,10 +285,6 @@ nav {
 
   nav {
     display: none;
-  }
-
-  .material-symbols-outlined {
-    color: #FFFFFF;
   }
 
   .container {

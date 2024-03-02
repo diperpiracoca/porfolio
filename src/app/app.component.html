@@ -1,26 +1,45 @@
-
 <mat-drawer-container class="econtainer" hasBackdrop="true">
   <mat-drawer #drawer mode="over">
-    <mat-list >
-      <mat-list-item matRipple><p class="link" (click)="scrollToSection('inicio','end') ; drawer.close()"> Inicio</p></mat-list-item>
-      <mat-list-item matRipple><p class="link" (click)="scrollToSection('skills','center') ; drawer.close()"> Skills</p></mat-list-item>
-      <mat-list-item matRipple><p class="link" (click)="scrollToSection('trayectoria','center') ; drawer.close()"> Trayectoria</p></mat-list-item>
-      <mat-list-item matRipple><p class="link" (click)="scrollToSection('inicio','end'); drawer.close()"> Proyectos</p></mat-list-item>
-      <mat-list-item matRipple><p class="link" (click)="scrollToSection('inicio','end'); drawer.close()"> Contacto</p></mat-list-item>
+    <mat-list>
+      <mat-list-item matRipple>
+        <p class="link" (click)="scrollToSection('inicio','end') ; drawer.close()"> Inicio</p>
+      </mat-list-item>
+      <mat-list-item matRipple>
+        <p class="link" (click)="scrollToSection('skills','center') ; drawer.close()"> Skills</p>
+      </mat-list-item>
+      <mat-list-item matRipple>
+        <p class="link" (click)="scrollToSection('trayectoria','start') ; drawer.close()"> Trayectoria</p>
+      </mat-list-item>
+      <mat-list-item matRipple>
+        <p class="link" (click)="scrollToSection('inicio','end'); drawer.close()"> Proyectos</p>
+      </mat-list-item>
+      <mat-list-item matRipple>
+        <p class="link" (click)="scrollToSection('contacto','end'); drawer.close()"> Contacto</p>
+      </mat-list-item>
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
     <nav>
       <ul>
-        <li> <p class="link" (click)="scrollToSection('inicio','end')"> Inicio</p></li>
-        <li><p class="link" (click)="scrollToSection('skills','center')"> Skills</p></li>
-        <li><p class="link" (click)="scrollToSection('trayectoria','start')"> Trayectoria</p></li>
-        <li><p class="link" (click)="scrollToSection('inicio','end')"> Proyectos</p></li>
-        <li><p class="link" (click)="scrollToSection('inicio','end')"> Contacto</p></li>
+        <li>
+          <p class="link" (click)="scrollToSection('inicio','end')"> Inicio</p>
+        </li>
+        <li>
+          <p class="link" (click)="scrollToSection('skills','start')"> Skills</p>
+        </li>
+        <li>
+          <p class="link" (click)="scrollToSection('trayectoria','start')"> Trayectoria</p>
+        </li>
+        <li>
+          <p class="link" (click)="scrollToSection('inicio','end')"> Proyectos</p>
+        </li>
+        <li>
+          <p class="link" (click)="scrollToSection('contacto','end')"> Contacto</p>
+        </li>
       </ul>
     </nav>
     <div class="tab">
-      <button  mat-icon-button aria-label="Menu desplegable" (click)="drawer.toggle()">
+      <button mat-icon-button aria-label="Menu desplegable" (click)="drawer.toggle()">
         <mat-icon class="material-symbols-outlined">menu</mat-icon>
       </button>
 
@@ -37,7 +56,7 @@
       <h2>Skills</h2>
 
       <div class="grid">
-        <div class="item"><img src="..\assets\icons\JAVA.svg" alt="Java"></div> 
+        <div class="item"><img src="..\assets\icons\JAVA.svg" alt="Java"></div>
         <div class="item"> <img src="..\assets\icons\spring.svg" alt="Spring"></div>
         <div class="item"> <img src="..\assets\icons\mysql.svg" alt="Mysql"></div>
         <div class="item"><img src="..\assets\icons\Git.svg" alt="Git"></div>
@@ -49,10 +68,10 @@
         <div class="item"><img src="..\assets\icons\HTML.svg" alt="HTML"></div>
         <div class="item"> <img src="..\assets\icons\css.svg" alt="CSS"></div>
         <div class="item"> <img src="..\assets\icons\typescript.svg" alt="TypeScript"></div>
-        <div class="item">   <img src="..\assets\icons\eclipse.svg" alt="Eclipse"></div>
+        <div class="item"> <img src="..\assets\icons\eclipse.svg" alt="Eclipse"></div>
         <div class="item"><img src="..\assets\icons\androidstudio.svg" alt="Android Studio"></div>
         <div class="item"><img src="..\assets\icons\vscode.svg" alt="VsCode"></div>
-        <div class="item">  <img src="..\assets\icons\firebase.svg" alt="Firebase"></div>
+        <div class="item"> <img src="..\assets\icons\firebase.svg" alt="Firebase"></div>
         <div class="item"><img src="..\assets\icons\figma.svg" alt="Figma"></div>
       </div>
     </div>
@@ -60,6 +79,9 @@
       <h2>Trayectoria</h2>
       <app-trayectoria></app-trayectoria>
     </div>
+    <div id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <app-contacto></app-contacto>
+    </div>
   </mat-drawer-content>
 </mat-drawer-container>
-

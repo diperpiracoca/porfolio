@@ -1,0 +1,74 @@
+mat-icon {
+    color: #DFFF60;
+}
+
+.botonera {
+    display: flex;
+    justify-content: center;
+
+    .iconos {
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    img {
+        width: 4vw;
+        height: auto;
+        margin: 1vw;
+    }
+}
+
+.form {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+
+    form {
+        width: 100%;
+
+        mat-label {
+            color: #1C201F;
+        }
+
+        mat-form-field {
+            font-family: 'SpaceGrotesk';
+            width: 100%;
+            margin-bottom: 3vh;
+        }
+
+        button {
+            font-family: 'Inter';
+            margin-bottom: 4vh;
+        }
+
+        .mat-mdc-raised-button.mat-accent {
+            --mdc-protected-button-label-text-color: #1C201F;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .botonera {
+        img {
+            width: 8vw;
+            height: 8vw;
+            margin: 2vw;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .botonera {
+        img {
+            width: 8vw;
+            height: 8vw;
+            margin: 2vw;
+        }
+    }
+
+    .form {
+        width: 80%;
+    }
+}
