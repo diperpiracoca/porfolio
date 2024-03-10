@@ -162,6 +162,21 @@ nav {
 
 }
 
+.proyectos {
+  padding-top: 6vh;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 6vh;
+
+  h2 {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   nav {
     padding-bottom: 0vh;

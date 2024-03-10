@@ -1,0 +1,39 @@
+.contenedor {
+  position: relative;
+  width: 100%;
+  max-width: 24vw; 
+  margin: 0 auto;
+  }
+
+  .boton-izquierdo {
+    position: absolute;
+    top: 50%;
+    left: -40;
+    transform: translateY(-50%);
+  }
+
+  .boton-derecho {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  img {
+        width: 100%;
+        height: auto;
+        display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      max-width: 80vw; 
+      }
+    
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenedor {
+      max-width: 36vw; 
+      }
+  }

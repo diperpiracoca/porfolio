@@ -11,7 +11,7 @@
         <p class="link" (click)="scrollToSection('trayectoria','start') ; drawer.close()"> Trayectoria</p>
       </mat-list-item>
       <mat-list-item matRipple>
-        <p class="link" (click)="scrollToSection('inicio','end'); drawer.close()"> Proyectos</p>
+        <p class="link" (click)="scrollToSection('proyectos','start'); drawer.close()"> Proyectos</p>
       </mat-list-item>
       <mat-list-item matRipple>
         <p class="link" (click)="scrollToSection('contacto','end'); drawer.close()"> Contacto</p>
@@ -31,7 +31,7 @@
           <p class="link" (click)="scrollToSection('trayectoria','start')"> Trayectoria</p>
         </li>
         <li>
-          <p class="link" (click)="scrollToSection('inicio','end')"> Proyectos</p>
+          <p class="link" (click)="scrollToSection('proyectos','start')"> Proyectos</p>
         </li>
         <li>
           <p class="link" (click)="scrollToSection('contacto','end')"> Contacto</p>
@@ -78,6 +78,10 @@
     <div id="trayectoria" class="trayectoria">
       <h2>Trayectoria</h2>
       <app-trayectoria></app-trayectoria>
+    </div>
+    <div id="proyectos" class="proyectos">
+      <h2>Proyectos</h2>
+      <app-proyectos></app-proyectos>
     </div>
     <div id="contacto" class="contacto">
       <h2>Contacto</h2>

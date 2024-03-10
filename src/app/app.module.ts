@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,13 +14,17 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { SnackComponent } from './components/snack/snack.component';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { CarreteComponent } from './components/carrete/carrete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TrayectoriaComponent,
     ContactoComponent,
-    SnackComponent
+    SnackComponent,
+    ProyectosComponent,
+    CarreteComponent
   ],
   imports: [
     BrowserModule,
@@ -34,9 +38,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatSnackBarModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HammerModule,
     ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+ }

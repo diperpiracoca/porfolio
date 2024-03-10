@@ -1,0 +1,21 @@
+<div class="proyectos">
+    <div class="list">
+        <div class="item" *ngFor="let item of proyectos">
+            <div class="estado">
+                <div>
+                    <p>{{item.estado}}</p>
+                </div>
+            </div>
+            <div class="carrete">
+                <app-carrete [images]="item.imagenes"></app-carrete>
+            </div>
+            <h3>{{item.titulo}}</h3>
+            <p>{{item.descripcion}}</p>
+            <div class="botonera">
+                <div class="iconos" matRipple *ngFor="let red of item.RedesSociales">
+                    <a [href]="red.link" target="_blank"><img [src]="red.icono" [alt]="red.nombre"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
