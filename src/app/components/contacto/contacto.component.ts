@@ -48,8 +48,6 @@ export class ContactoComponent {
     if (this.formulario.valid) {
       const email = this.formulario.value.correo;
       const message = this.formulario.value.mensaje;
-      console.log("Email:", email);
-      console.log("Message:", message);
       this.writeUserData(email,message);
       this.error=false;
       this.formulario.reset();
