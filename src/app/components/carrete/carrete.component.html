@@ -1,5 +1,5 @@
-<div class="contenedor" [@enterAnimation]="indice > 1">
-  <img [src]="this.image" alt="Imagenes" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)" />
+<div class="contenedor" >
+  <img [src]="this.image" alt="Imagenes" />
 
     <button *ngIf="this.images.length  > 1 " mat-icon-button class="boton boton-izquierdo " (click)="izquierdo()"
       aria-label="Izquierda">

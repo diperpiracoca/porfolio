@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class CarreteComponent implements OnInit {
-  @Input() images: string[] = [];
+    @Input() images: string[] = [];
   image = '';
   indice = 0;
   intervalo: any | undefined;
@@ -15,7 +15,7 @@ export class CarreteComponent implements OnInit {
   ngOnInit(): void {
     this.image = this.images[this.indice];
     this.crearLoop();
-  }
+      }
   derecho() {
     if (this.images.length - 1 > this.indice) {
       this.indice = this.indice + 1;
@@ -38,10 +38,6 @@ export class CarreteComponent implements OnInit {
   cambio() {
     this.crearLoop();
     this.image = this.images[this.indice];
-  }
-
-  swipe($event: any) {
-    $event == 'swipeleft' ? this.izquierdo() : this.derecho();
   }
 
   crearLoop() {

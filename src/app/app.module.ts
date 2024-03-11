@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, HammerModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { CarreteComponent } from './components/carrete/carrete.component';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { CarreteComponent } from './components/carrete/carrete.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    HammerModule,
+    NgOptimizedImage
     ],
   providers: [ ],
   bootstrap: [AppComponent]
