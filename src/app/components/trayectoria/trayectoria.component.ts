@@ -17,7 +17,7 @@ export class TrayectoriaComponent {
       ' Lenguajes de marca y desarrollo de Interfaces.']
   },
   {
-    fecha: '2023 - actualmente', titulo: 'Programador Java con base de datos Oracle SQL',
+    fecha: 'Julio de 2023 - actualmente', titulo: 'Programador Java con base de datos Oracle SQL',
     lugar: 'Cantabria, España', organizacion: 'AXPE Consulting Cantabria', icono: 'work',
     tareas: ['Desarrollo de aplicaciones web y móviles con el uso de Spring MVC y Ionic.',
       'Integración con bases de datos Oracle: Consultas SQL complejas y eficientes.',

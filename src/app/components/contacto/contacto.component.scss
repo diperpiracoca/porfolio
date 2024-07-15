@@ -1,3 +1,15 @@
+.body {
+    padding: 5rem 1rem 2rem 1rem ;
+    background-color: #6D8D8B;
+  
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 0px;
+        color: #FFFFFF;
+    }
+  }
+
 .botonera {
     display: flex;
     justify-content: center;
@@ -8,16 +20,16 @@
     }
 
     img {
-        width: 4vw;
+        width: 3rem;
         height: auto;
-        margin: 1vw;
+        margin: 0rem 1rem;
     }
 }
 
 .form {
     display: flex;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
 
     form {
         width: 100%;
@@ -45,27 +57,10 @@
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .botonera {
-        img {
-            width: 8vw;
-            height: 8vw;
-            margin: 2vw;
-        }
-    }
-}
 
-@media screen and (max-width: 768px) {
-
-    .botonera {
-        img {
-            width: 8vw;
-            height: 8vw;
-            margin: 2vw;
-        }
-    }
+@media (max-width: 768px) {
 
     .form {
-        width: 80%;
+        width: 100%;
     }
 }

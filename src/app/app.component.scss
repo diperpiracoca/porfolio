@@ -4,10 +4,6 @@
   background-color: #1C201F;
 }
 
-h1 {
-  font-family: 'inter';
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -15,7 +11,15 @@ nav {
   width: 100%;
   background-color: #1C201F;
   z-index: 1000;
-  padding-bottom: 2vh;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 2.5rem;
+    margin-left: 1rem;
+  }
 
   ul {
     list-style-type: none;
@@ -23,14 +27,11 @@ nav {
     margin: 0;
     display: flex;
     justify-content: flex-end;
-    font-family: 'SpaceGrotesk';
-    font-size: 2vw;
+    font-size: 1.25rem;
   }
 
   li {
-    padding-top: 2vh;
     padding-right: 3vw;
-    padding-bottom: 1vh;
   }
 
   .link {
@@ -41,228 +42,128 @@ nav {
   }
 
   .link:hover,
-  .link:active,
-  .link:focus {
+  nav .link:active,
+  nav .link:focus {
     color: #DFFF60;
     text-decoration: underline;
   }
 }
 
 .container {
+  background-image: url('../assets/images/didierFoto.png');
+  background-size: cover;
+  background-position: center;
+  border-image: fill 0 linear-gradient(#0001, #000);
   background-color: #6D8D8B;
-  border-radius: 25px;
   margin: 0 auto;
+  height: 25rem;
+  padding: 2.5rem 2rem;
   display: flex;
-  width: 75%;
-  height: auto;
-  margin-top: 8vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 
-  .title-1 {
-    color: white;
-    margin-top: 2rem;
-    margin-left: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 7vw;
-    grid-column: 1;
-    grid-row: 1;
+  .flex {
+    display: flex;
+    justify-content: space-between;
 
-  }
+    .titles {
+      flex-direction: column;
+      display: flex;
+    }
 
-  .title-2 {
-    color: #DFFF60;
-    margin-bottom: 2rem;
-    margin-right: 2.5rem;
-    font-size: 7vw;
-    grid-column: 3;
-    grid-row: 2;
-  }
+    .title-1 {
+      color: white;
+      font-size: 7.5rem;
+      margin: 0px;
+    }
 
-  img {
-    grid-column: 2;
-    grid-row: 1 / span 3;
-    justify-self: center;
-    align-self: end;
-    height: 90%;
-    width: auto;
+    .title-2 {
+      margin-top: -1rem;
+      margin-bottom: 0px;
+      color: #DFFF60;
+      font-size: 7.5rem;
+    }
+
+    img {
+      width: auto;
+      height: 14rem;
+      object-fit: scale-down;
+    }
   }
 
   .descrip {
-    font-family: 'SpaceGrotesk';
-    grid-column: 1 / span 3;
-    grid-row: 4;
-    justify-self: center;
-    align-self: center;
-    font-size: 2.5vw;
-    width: 70%;
+    color: #e8e8e8;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .botonera {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+    .iconos {
+      border: solid #DFFF60 2px;
+      border-color: #DFFF60;
+      border-radius: 1rem;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+
+      a {
+        height: 100%;
+        color: #e8e8e8;
+        font-family: 'inter';
+        font-size: 1rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      img {
+        width: 2rem;
+        height: auto;
+        margin-left: 0.75rem;
+      }
+    }
   }
 }
 
 .skills {
-  padding-top: 6vh;
-  margin-bottom: 6rem;
+  margin: 0 auto;
+  padding: 5rem 0px;
 
   h2 {
-    color: #FFFFFF;
-    font-family: "Inter";
-    font-size: 6vw;
+    font-size: 2.5rem;
+    margin: 0px 0px;
     text-align: center;
+    color: #FFFFFF;
   }
 
   .grid {
-    max-width: 70%;
-    margin: 0 auto;
+    max-width: 55%;
+    margin: 1rem auto 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.25rem;
   }
 
   .item {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .item img {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.trayectoria {
-  padding-top: 6vh;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 3vh;
-  background-color: #FFFFFF;
-
-  h2 {
-    color: #6D8D8B;
-    font-family: "Inter";
-    font-size: 6vw;
-    text-align: center;
-  }
-}
-
-.contacto {
-  padding-top: 6vh;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 3vh;
-  background-color: #6D8D8B;
-
-  h2 {
-    color: #FFFFFF;
-    font-family: "Inter";
-    font-size: 6vw;
-    text-align: center;
-  }
-
-}
-
-.proyectos {
-  padding-top: 6vh;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 6vh;
-
-  h2 {
-    color: #FFFFFF;
-    font-family: "Inter";
-    font-size: 6vw;
-    text-align: center;
-  }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  nav {
-    padding-bottom: 0vh;
-
-    li {
-      padding-top: 1vh;
-      padding-right: 3vw;
-      padding-bottom: 1vh;
-    }
-
-    .link {
-      margin-top: 1vh;
-    }
-  }
-
-  .container {
-    border-radius: 25px;
-    margin: 0 auto;
-    display: flex;
-    width: 80%;
-    height: auto;
-    margin-top: 7rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
-
-    .title-1 {
-      color: white;
-      margin-top: 2rem;
-      margin-left: 2rem;
-      margin-bottom: 0.5rem;
-      font-size: 6vw;
-      grid-column: 1;
-      grid-row: 1;
-
-    }
-
-    .title-2 {
-      color: #DFFF60;
-      margin-bottom: 1.5rem;
-      margin-right: 2rem;
-      margin-top: 0.5rem;
-      font-size: 6vw;
-      grid-column: 3;
-      grid-row: 2;
-    }
 
     img {
-      grid-column: 2;
-      grid-row: 1 / span 2;
-      justify-self: center;
-      align-self: end;
-      height: 90%;
-      width: auto;
-    }
-
-    .descrip {
-      font-family: 'SpaceGrotesk';
-      grid-column: 1 / span 3;
-      grid-row: 4;
-      justify-self: center;
-      align-self: center;
-      font-size: 3vw;
-      width: 80%;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
     }
   }
-
-  .trayectoria {
-    padding-top: 1rem;
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 3rem;
-    background-color: #FFFFFF;
-
-    h2 {
-      color: #6D8D8B;
-      font-family: "Inter";
-      font-size: 6vw;
-      text-align: center;
-    }
-  }
-
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 696px) {
   .tab {
     position: fixed;
     top: 0;
@@ -270,6 +171,14 @@ nav {
     width: 100%;
     background-color: #1C201F;
     z-index: 1000;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    img {
+      width: 2.5rem;
+      margin-right: 1rem;
+    }
   }
 
   mat-drawer {
@@ -278,18 +187,17 @@ nav {
 
     mat-list-item {
       margin-top: 0.5rem;
-    }
 
-    .link {
-      color: #FFFFFF;
-      font-family: 'SpaceGrotesk';
-      font-size: x-large;
-    }
+      .link {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+      }
 
-    .link:hover,
-    .link:active,
-    .link:focus {
-      color: #DFFF60;
+      .link:hover,
+      .link:active,
+      .link:focus {
+        color: #DFFF60;
+      }
     }
   }
 
@@ -304,65 +212,42 @@ nav {
   }
 
   .container {
-    border-radius: 0px;
-    margin: 0 auto;
-    display: flex;
-    width: 100%;
     height: auto;
-    margin-top: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    margin-top: 3rem;
+    padding: 10px;
 
-    .title-1 {
-      color: white;
-      margin-left: 1rem;
-      margin-bottom: 0;
-      font-size: 14vw;
-      grid-column: 1;
-      grid-row: 1;
-      align-self: self-end;
+    .flex {
+      justify-content: normal;
 
-    }
+      .titles {
+        margin-right: 1rem;
+      }
 
-    .title-2 {
-      color: #DFFF60;
-      margin-left: 1rem;
-      margin-top: 0;
-      margin-bottom: 0;
-      font-size: 14vw;
-      grid-column: 1 / span 2;
-      grid-row: 2;
-    }
+      .title-1 {
+        font-size: 3.5rem;
+      }
 
-    img {
-      grid-column: 2;
-      grid-row: 1 / span 3;
-      justify-self: right;
-      align-self: end;
-      margin-right: 0.5rem;
-      height: 70%;
+      .title-2 {
+        margin-top: -1rem;
+        font-size: 3.5rem;
+      }
+
+      img {
+        align-self: end;
+        width: auto;
+        height: 10rem;
+        object-fit: scale-down;
+      }
     }
 
     .descrip {
-      font-family: 'SpaceGrotesk';
-      grid-column: 1 / span 2;
-      width: 60%;
-      grid-row: 3;
-      justify-self: start;
-      font-size: 5vw;
-      margin-left: 1rem;
+      font-size: 1rem;
     }
   }
 
-  .skills {
-    .grid {
-      max-width: 80%;
-      margin: 0 auto;
-      margin-top: 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-      gap: 0.5rem;
-    }
+  .skills .grid {
+    max-width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 0.5rem;
   }
 }

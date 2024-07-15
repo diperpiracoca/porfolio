@@ -1,15 +1,18 @@
-<div class="timeline">
-    <div class="timeline-item" *ngFor="let exp of listExp ; let i = index">
-        <div class="icono"><mat-icon class="material-symbols-outlined">{{exp.icono}}</mat-icon></div>
-        <h3>{{exp.fecha}}</h3>
-        <h4>{{exp.titulo}}</h4>
-        <p class="lugar">{{exp.organizacion+' | '+exp.lugar}}</p>
-        <div class="tareas">
-            <ul>
-                <li *ngFor="let tarea of exp.tareas">
-                    {{tarea}}
-                </li>
-            </ul>
+<div class="trayectoria">
+    <h2>Trayectoria</h2>
+    <div class="timeline">
+        <div class="timeline-item" *ngFor="let exp of listExp ; let i = index">
+            <div class="icono"><mat-icon class="material-symbols-outlined">{{exp.icono}}</mat-icon></div>
+            <h3>{{exp.fecha}}</h3>
+            <h4>{{exp.titulo}}</h4>
+            <p class="lugar">{{exp.organizacion+' | '+exp.lugar}}</p>
+            <div class="tareas">
+                <ul>
+                    <li *ngFor="let tarea of exp.tareas">
+                        {{tarea}}
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

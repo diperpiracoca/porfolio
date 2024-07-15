@@ -1,161 +1,133 @@
 .proyectos {
-    display: flex;
-    margin: 0 auto;
-    width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  padding: 5rem 0px;
+  img{
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0px 0px;
+    color: #FFFFFF;
+  }
+
+  .dics {
+    padding:1.5rem 0px ;
+    a {
+      text-decoration: none;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+      img {
+        width: 3.25rem;
+        margin-right: 0.5rem;
+        
+      }
+      h4 {
+        margin: 0;
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+        color: #FFFFFF;
+      }
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+      color: #afb9b6;
+    }
+  }
+
+  .list {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 21vw 21vw 21vw;
+    grid-gap: 2vw;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff06;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(25px);
+      padding: 1rem 0.75rem;
+      border-radius: 1vw;
+      justify-content: space-between;
+
+      h3 {
+        color: white;
+        font-size: 1.5rem;
+        margin: 1rem 0px 0px 0px;
+      }
+
+      .estado {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0.5rem;
+
+        div {
+          border: 2px solid #DFFF60;
+          border-radius: 1vw;
+
+          p {
+            margin: 2px 1vw;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      p {
+        color: #afb9b6;
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
+      }
+
+      .botonera {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .iconos {
+          border-radius: 50%;
+          cursor: pointer;
+          padding: 10px;
+
+          img {
+            width: 2.25rem;
+            height: 2.25rem;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .proyectos {
+    width: 85%;
 
     .list {
-        display: grid;
-        width: 100%;
-        justify-content: center;
-        grid-template-columns: 21vw 21vw 21vw;
-        grid-gap: 2vw;
-
-        .item {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; 
-            background-color: #ffffff06;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(25px);
-            padding: 2vh 1.5vw 2vh 1.5vw;
-            border-radius: 1vw;
-
-            .estado {
-                width: 100%;
-                display: flex;
-                justify-content: flex-end;
-                margin-bottom: 1vh;
-
-                div {
-                    border: 2px solid #DFFF60;
-                    border-radius: 1vw;
-
-                    p {
-                        margin: 2px 1vw 2px 1vw;
-                        font-size: 1vw;
-                    }
-                }
-            }
-
-            h3 {
-                font-family: 'Inter';
-                color: white;
-                font-size: 2vw;
-                margin-bottom: 0.5vh;
-                margin-top: 1vh;
-
-            }
-
-            p {
-                font-family: 'SpaceGrotesk';
-                color: #afb9b6;
-                font-size: 1.5vw;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 3;
-                line-height: 1.5em;
-                max-height: 4.5em;
-
-            }
-
-            .botonera {
-                width: 100%;
-                display: flex;
-                justify-content: flex-end;
-                .iconos {
-                    border-radius: 50%;
-                    cursor: pointer;
-                }
-
-                img {
-                    width: 2.5vw;
-                    height: 2.5vw;
-                    margin: 0.5vw;
-                }
-            }
-        }
+      grid-template-columns: 1fr;
+      grid-gap: 4vw;
     }
+  }
+
+
 }
-@media screen and (max-width: 768px) {
-    .proyectos {
-        width: 85%;
-        .list {
-            grid-template-columns: 1fr;
-            grid-gap: 4vw;
-            .item {
-                padding: 2vh 5vw 2vh 5vw;
-                border-radius: 3vw; 
-                .estado {
-                    div {
-                        border-radius: 1.5vw;
-                        p {
-                            margin: 2px 1vw 2px 1vw;
-                            font-size: 2.5vw;
-                        }
-                    }
-                }
-    
-                h3 {
-                    font-size: 6vw;
-                    margin-bottom: 0.5vh;
-                    margin-top: 1vh;
-                }
-    
-                p {
-                    margin-top: 0.5vh;
-                    font-size: 4vw;
-                } 
-                .botonera {
-                    img {
-                        width: 7vw;
-                        height: 7vw;
-                        margin: 2vw;
-                    }
-                }
-            }
-        }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .proyectos {
+    width: 80%;
+
+    .list {
+      grid-template-columns: 37vw 37vw;
+      grid-gap: 3vw;
     }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .proyectos {
-        width: 80%;
-        .list {
-            grid-template-columns: 37vw 37vw;
-            grid-gap: 3vw;
-            .item {
-                padding: 1.5vh 3vw 1.5vh 3vw;
-                border-radius: 3vw; 
-                .estado {
-                    div {
-                        border-radius: 1.5vw;
-                        p {
-                            margin: 2px 1vw 2px 1vw;
-                            font-size: 1.5vw;
-                        }
-                    }
-                }
-    
-                h3 {
-                    font-size: 4vw;
-                    margin-bottom: 0.5vh;
-                    margin-top: 1vh;
-                }
-    
-                p {
-                    margin-top: 0.5vh;
-                    font-size: 2.5vw;
-                }
-    
-                .botonera {
-                    img {
-                        width: 4vw;
-                        height: 4vw;
-                        margin: 1.5vw;
-                    }
-                }
-            }
-        }
-    }
+  }
 }

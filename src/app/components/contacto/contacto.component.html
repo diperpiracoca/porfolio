@@ -1,27 +1,32 @@
-<div class="form">
+<div class="body">
+  <h2>Contacto</h2>
+  <div class="form">
     <form class="example-form" [formGroup]="formulario" (ngSubmit)="onSubmit()">
-        <mat-form-field class="example-full-width">
-          <mat-label>Email</mat-label>
-          <input type="email" matInput [errorStateMatcher]="matcher"  [formControl]="emailFormControl"
-                 placeholder="Ex. pat@example.com">
-          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-            Por favor ingresa un email valído
-          </mat-error>
-          <mat-error *ngIf="emailFormControl.hasError('required') && error">
-            Email es <strong>requirido</strong>
-          </mat-error>
-        </mat-form-field>
-        <mat-form-field class="example-full-width">
-            <mat-label>Mensaje</mat-label>
-            <input matInput #message maxlength="256" [formControl]="mensajeFormContrl">
-            <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
-          </mat-form-field>
-            <button mat-raised-button color="accent" type="submit">Enviar</button>
-      </form>
-    
-</div>
-<div class="botonera">
-    <div class="iconos" matRipple  (click)="openSnackBar()"> <img src="..\assets\icons\email_logo.svg" alt="Email"></div>
-    <div class="iconos" matRipple> <a href="https://www.linkedin.com/in/didier-estiben-piracoca-campos-460828216/" target="_blank"><img src="..\assets\icons\linkedin_logo.svg" alt="Linkedin"> </a></div>
-    <div class="iconos" matRipple> <a href="https://github.com/diperpiracoca" target="_blank"><img src="..\assets\icons\github-logo.svg" alt="GitHub"> </a></div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput [errorStateMatcher]="matcher" [formControl]="emailFormControl"
+          placeholder="Ex. pat@example.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Por favor ingresa un email valído
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required') && error">
+          Email es <strong>requirido</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Mensaje</mat-label>
+        <input matInput #message maxlength="256" [formControl]="mensajeFormContrl">
+        <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+      </mat-form-field>
+      <button mat-raised-button color="accent" type="submit">Enviar</button>
+    </form>
+
+  </div>
+  <div class="botonera">
+    <div class="iconos" matRipple (click)="openSnackBar()"> <img src="..\assets\icons\email_logo.svg" alt="Email"></div>
+    <div class="iconos" matRipple> <a href="https://www.linkedin.com/in/didier-estiben-piracoca-campos-460828216/"
+        target="_blank"><img src="..\assets\icons\linkedin_logo.svg" alt="Linkedin"> </a></div>
+    <div class="iconos" matRipple> <a href="https://github.com/diperpiracoca" target="_blank"><img
+          src="..\assets\icons\github-logo.svg" alt="GitHub"> </a></div>
+  </div>
 </div>

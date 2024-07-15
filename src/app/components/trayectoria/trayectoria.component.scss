@@ -1,3 +1,15 @@
+.trayectoria {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 5rem 0px;
+    h2 {
+        font-size: 2.5rem;
+        margin: 0px 0px;
+        text-align: center;
+        color: #6D8D8B;
+    }
+}
+
 .timeline {
     width: 70%;
     height: auto;
@@ -12,7 +24,7 @@
         h3 {
             font-family: 'SpaceGrotesk';
             color: #afb9b6;
-            font-size: 1.5vw;
+            font-size: 1rem;
             margin-top: 0px;
             margin-left: 0.5rem;
 
@@ -21,7 +33,7 @@
         h4 {
             font-family: 'Inter';
             color: #1C201F;
-            font-size: 2vw;
+            font-size: 1.25rem;
             margin-top: 4vh;
             margin-bottom: 0px;
             margin-left: 0.5rem;
@@ -31,7 +43,7 @@
         .lugar {
             color: #1C201F;
             font-family: 'SpaceGrotesk';
-            font-size: 1.5vw;
+            font-size: 1.25rem;
             margin-top: 0.5rem;
             margin-left: 0.5rem;
             text-align: right;
@@ -77,18 +89,6 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .timeline {
         .timeline-item {
-            h3 {
-                font-size: 2vw;
-            }
-
-            h4 {
-                font-size: 2.5vw;
-            }
-
-            .lugar {
-                font-size: 2vw;
-            }
-
             .tareas {
                 li {
                     font-size: 2vw;
@@ -101,24 +101,10 @@
 @media screen and (max-width: 768px) {
     .timeline {
         .timeline-item {
-            h3 {
-                padding-top: 0.5rem;
-                margin-left: 0px;
-                font-size: 3vw;
-            }
-
-            h4 {
-                margin-top: 2vh;
-                font-size: 4vw;
-            }
-
-            .lugar {
-                font-size: 3.5vw;
-            }
 
             .tareas {
                 ul {
-                    padding-left:1vw ;
+                    padding-left: 1vw;
                     margin-right: 0px;
                 }
 

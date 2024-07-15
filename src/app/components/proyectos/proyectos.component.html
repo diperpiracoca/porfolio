@@ -1,4 +1,16 @@
 <div class="proyectos">
+    <h2>Proyectos</h2>
+    <div class="dics">
+        <a href="https://dicsstartup.com/" target="_blank">
+          <img src="..\assets\icons\logo-dics.svg" alt="DICSTARTUP">
+          <h4>DICSTARTUP</h4>
+          <mat-icon matRipple class="material-symbols-outlined">arrow_outward</mat-icon>
+        </a>
+      <p>Creé DICSTARTUP para fomentar el código abierto y la comunidad entre programadores. Alojo todos mis proyectos
+        en su repositorio, donde desarrollo la mayoría del código y todos los diseños, además de gestionar los
+        proyectos y el repositorio.
+      </p>
+    </div>
     <div class="list">
         <div class="item" *ngFor="let item of proyectos">
             <div class="estado">
@@ -7,7 +19,7 @@
                 </div>
             </div>
             <div class="carrete">
-                <app-carrete [images]="item.imagenes"></app-carrete>
+                <img [src]="this.item.imagenes" alt="Imagenes" />
             </div>
             <h3>{{item.titulo}}</h3>
             <p>{{item.descripcion}}</p>
